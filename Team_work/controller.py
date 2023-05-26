@@ -1,10 +1,9 @@
-
 import  model, view
 
 def start():
     view.greetings()
     while True:
-        
+
         view.menu() 
         activ = input("Выберите действие от 1 до 6,где 1. вывести все контакты: 2. поиск контактов: 3. добавить контакт: 4. изменить контакт: 5. удалить: 6. выход: ")
         print()
@@ -17,7 +16,7 @@ def start():
             model.search_contacts(data) #поиск контактов
         elif activ== '3':
             data = input('Введите ФИО: ')
-            view.add_contact(data) #добавить контакт
+            model.add_contact(data) #добавить контакт
         elif activ == '4': 
             data = input('какой контакт хотите изменить ?: ')
             model.change_contacts(data) # изменить контакт
@@ -33,6 +32,4 @@ def start():
         if __name__ == "__main__":
             start()
 
-    
-       
 
