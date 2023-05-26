@@ -24,7 +24,7 @@ def print_contacts(contact_list: list):                                         
         print()
 
 def show_contacts(phonebook):                                                             # показать контакты
-    list_of_contacts = sorted(read_file_to_dict(file_name), key=lambda x: x['Фамилия'])
+    list_of_contacts = sorted(read_file_to_dict(phonebook), key=lambda x: x['Фамилия'])
     print_contacts(list_of_contacts)
     print()
     return list_of_contacts
