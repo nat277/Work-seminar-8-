@@ -5,10 +5,10 @@ def start():
     while True:
 
         view.menu() 
-        activ = input("Выберите действие от 1 до 6,где 1. вывести все контакты: 2. поиск контактов: 3. добавить контакт: 4. изменить контакт: 5. удалить: 6. выход: ")
+        activ = input("Выберите действие от 1 до 6: ")
         print()
 
-        activ = input('Действие: ') 
+      
         if activ == '1':
            view.display_contacts(data) #все контакты
         elif activ == '2':
